@@ -22,11 +22,9 @@ Partial Class NuevoCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevoCliente))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.alumno = New System.Windows.Forms.Panel()
-        '   Me.TBBuscaAlumnos = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -58,6 +56,7 @@ Partial Class NuevoCliente
         Me.TBNombre = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DataFecha = New Bunifu.Framework.UI.BunifuDatepicker()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.alumno.SuspendLayout()
         CType(Me.GridAlum, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -67,7 +66,6 @@ Partial Class NuevoCliente
         'alumno
         '
         Me.alumno.BackColor = System.Drawing.Color.White
-        ' Me.alumno.Controls.Add(Me.TBBuscaAlumnos)
         Me.alumno.Controls.Add(Me.Label4)
         Me.alumno.Controls.Add(Me.Label14)
         Me.alumno.Controls.Add(Me.Label3)
@@ -78,19 +76,6 @@ Partial Class NuevoCliente
         Me.alumno.Size = New System.Drawing.Size(1386, 48)
         Me.alumno.TabIndex = 24
         '
-        'TBBuscaAlumnos
-        '
-        'Me.TBBuscaAlumnos.BackColor = System.Drawing.SystemColors.Control
-        'Me.TBBuscaAlumnos.BackgroundImage = CType(resources.GetObject("TBBuscaAlumnos.BackgroundImage"), System.Drawing.Image)
-        'Me.TBBuscaAlumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        'Me.TBBuscaAlumnos.ForeColor = System.Drawing.Color.Silver
-        'Me.TBBuscaAlumnos.Icon = CType(resources.GetObject("TBBuscaAlumnos.Icon"), System.Drawing.Image)
-        'Me.TBBuscaAlumnos.Location = New System.Drawing.Point(779, 9)
-        'Me.TBBuscaAlumnos.Name = "TBBuscaAlumnos"
-        'Me.TBBuscaAlumnos.Size = New System.Drawing.Size(221, 29)
-        'Me.TBBuscaAlumnos.TabIndex = 18
-        'Me.TBBuscaAlumnos.text = ""
-
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -174,6 +159,7 @@ Partial Class NuevoCliente
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel2.Controls.Add(Me.BunifuFlatButton1)
         Me.Panel2.Controls.Add(Me.BunifuMetroTextbox2)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.BunifuMetroTextbox1)
@@ -211,12 +197,14 @@ Partial Class NuevoCliente
         Me.BunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.BunifuMetroTextbox2.BorderThickness = 1
+        Me.BunifuMetroTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuMetroTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.BunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox2.isPassword = False
         Me.BunifuMetroTextbox2.Location = New System.Drawing.Point(317, 161)
         Me.BunifuMetroTextbox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMetroTextbox2.MaxLength = 32767
         Me.BunifuMetroTextbox2.Name = "BunifuMetroTextbox2"
         Me.BunifuMetroTextbox2.Size = New System.Drawing.Size(232, 72)
         Me.BunifuMetroTextbox2.TabIndex = 34
@@ -241,12 +229,14 @@ Partial Class NuevoCliente
         Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.BunifuMetroTextbox1.BorderThickness = 1
+        Me.BunifuMetroTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox1.isPassword = False
         Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(317, 94)
         Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMetroTextbox1.MaxLength = 32767
         Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
         Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(83, 35)
         Me.BunifuMetroTextbox1.TabIndex = 32
@@ -254,6 +244,7 @@ Partial Class NuevoCliente
         '
         'BTRegistrar
         '
+        Me.BTRegistrar.Active = False
         Me.BTRegistrar.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BTRegistrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.BTRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -328,12 +319,14 @@ Partial Class NuevoCliente
         Me.TBemail.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBemail.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBemail.BorderThickness = 1
+        Me.TBemail.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBemail.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBemail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBemail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBemail.isPassword = False
         Me.TBemail.Location = New System.Drawing.Point(24, 461)
         Me.TBemail.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBemail.MaxLength = 32767
         Me.TBemail.Name = "TBemail"
         Me.TBemail.Size = New System.Drawing.Size(232, 35)
         Me.TBemail.TabIndex = 29
@@ -358,12 +351,14 @@ Partial Class NuevoCliente
         Me.TBTelef.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBTelef.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBTelef.BorderThickness = 1
+        Me.TBTelef.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBTelef.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBTelef.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBTelef.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBTelef.isPassword = False
         Me.TBTelef.Location = New System.Drawing.Point(25, 398)
         Me.TBTelef.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBTelef.MaxLength = 32767
         Me.TBTelef.Name = "TBTelef"
         Me.TBTelef.Size = New System.Drawing.Size(232, 35)
         Me.TBTelef.TabIndex = 24
@@ -402,12 +397,14 @@ Partial Class NuevoCliente
         Me.TBDirec.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBDirec.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBDirec.BorderThickness = 1
+        Me.TBDirec.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBDirec.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBDirec.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBDirec.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBDirec.isPassword = False
         Me.TBDirec.Location = New System.Drawing.Point(26, 334)
         Me.TBDirec.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBDirec.MaxLength = 32767
         Me.TBDirec.Name = "TBDirec"
         Me.TBDirec.Size = New System.Drawing.Size(232, 35)
         Me.TBDirec.TabIndex = 22
@@ -484,12 +481,14 @@ Partial Class NuevoCliente
         Me.TBDni.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBDni.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBDni.BorderThickness = 1
+        Me.TBDni.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBDni.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBDni.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBDni.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBDni.isPassword = False
         Me.TBDni.Location = New System.Drawing.Point(25, 29)
         Me.TBDni.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBDni.MaxLength = 32767
         Me.TBDni.Name = "TBDni"
         Me.TBDni.Size = New System.Drawing.Size(232, 35)
         Me.TBDni.TabIndex = 0
@@ -526,12 +525,14 @@ Partial Class NuevoCliente
         Me.TBApellido.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBApellido.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBApellido.BorderThickness = 1
+        Me.TBApellido.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBApellido.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBApellido.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBApellido.isPassword = False
         Me.TBApellido.Location = New System.Drawing.Point(25, 94)
         Me.TBApellido.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBApellido.MaxLength = 32767
         Me.TBApellido.Name = "TBApellido"
         Me.TBApellido.Size = New System.Drawing.Size(232, 35)
         Me.TBApellido.TabIndex = 1
@@ -544,12 +545,14 @@ Partial Class NuevoCliente
         Me.TBNombre.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBNombre.BorderColorMouseHover = System.Drawing.Color.LightSkyBlue
         Me.TBNombre.BorderThickness = 1
+        Me.TBNombre.characterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.TBNombre.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TBNombre.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.TBNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TBNombre.isPassword = False
         Me.TBNombre.Location = New System.Drawing.Point(26, 161)
         Me.TBNombre.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBNombre.MaxLength = 32767
         Me.TBNombre.Name = "TBNombre"
         Me.TBNombre.Size = New System.Drawing.Size(232, 35)
         Me.TBNombre.TabIndex = 2
@@ -579,6 +582,42 @@ Partial Class NuevoCliente
         Me.DataFecha.Size = New System.Drawing.Size(232, 36)
         Me.DataFecha.TabIndex = 3
         Me.DataFecha.Value = New Date(2017, 3, 19, 21, 29, 36, 576)
+        '
+        'BunifuFlatButton1
+        '
+        Me.BunifuFlatButton1.Active = False
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton1.BorderRadius = 0
+        Me.BunifuFlatButton1.ButtonText = "Registrar"
+        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.Iconimage = Nothing
+        Me.BunifuFlatButton1.Iconimage_right = Nothing
+        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton1.IconMarginLeft = 0
+        Me.BunifuFlatButton1.IconMarginRight = 0
+        Me.BunifuFlatButton1.IconRightVisible = True
+        Me.BunifuFlatButton1.IconRightZoom = 0R
+        Me.BunifuFlatButton1.IconVisible = True
+        Me.BunifuFlatButton1.IconZoom = 90.0R
+        Me.BunifuFlatButton1.IsTab = False
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(301, 354)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.selected = False
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(272, 40)
+        Me.BunifuFlatButton1.TabIndex = 36
+        Me.BunifuFlatButton1.Text = "Registrar"
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'NuevoCliente
         '
@@ -634,4 +673,5 @@ Partial Class NuevoCliente
     Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
 End Class
