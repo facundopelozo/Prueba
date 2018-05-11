@@ -98,6 +98,7 @@ Partial Class Index
         Me.LPesosenero = New System.Windows.Forms.Label()
         Me.LEnero = New System.Windows.Forms.Label()
         Me.DataFecha = New Bunifu.Framework.UI.BunifuDatepicker()
+        Me.BunifuDatepicker1 = New Bunifu.Framework.UI.BunifuDatepicker()
         Me.PMenu.SuspendLayout()
         Me.PanelCabe.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -1245,11 +1246,25 @@ Partial Class Index
         Me.DataFecha.TabIndex = 23
         Me.DataFecha.Value = New Date(2017, 3, 19, 21, 29, 36, 576)
         '
+        'BunifuDatepicker1
+        '
+        Me.BunifuDatepicker1.BackColor = System.Drawing.Color.SteelBlue
+        Me.BunifuDatepicker1.BorderRadius = 0
+        Me.BunifuDatepicker1.ForeColor = System.Drawing.Color.White
+        Me.BunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.BunifuDatepicker1.FormatCustom = Nothing
+        Me.BunifuDatepicker1.Location = New System.Drawing.Point(258, 273)
+        Me.BunifuDatepicker1.Name = "BunifuDatepicker1"
+        Me.BunifuDatepicker1.Size = New System.Drawing.Size(232, 36)
+        Me.BunifuDatepicker1.TabIndex = 24
+        Me.BunifuDatepicker1.Value = New Date(2017, 3, 19, 21, 29, 36, 576)
+        '
         'Index
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1242, 556)
+        Me.Controls.Add(Me.BunifuDatepicker1)
         Me.Controls.Add(Me.DataFecha)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PFiltros)
@@ -1381,4 +1396,5 @@ Partial Class Index
     Friend WithEvents LPesosenero As Label
     Friend WithEvents LEnero As Label
     Friend WithEvents DataFecha As Bunifu.Framework.UI.BunifuDatepicker
+    Friend WithEvents BunifuDatepicker1 As Bunifu.Framework.UI.BunifuDatepicker
 End Class
